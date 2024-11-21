@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>Marks Calculator</h2>
+            <form action="" id="mc">
+                <label for="x1">Enter marks for Hindi</label><br>
+                <input type="text" id="h1" placeholder="Enter marks" class="input-field"><br>
+
+                <label for="x2">Enter marks for English</label><br>
+                <input type="text" id="e1" placeholder="Enter marks" class="input-field"><br>
+
+                <label for="x3">Enter marks for Maths</label><br>
+                <input type="text" id="m1" placeholder="Enter marks" class="input-field"><br>
+
+                <label for="x4">Enter marks for Physics</label><br>
+                <input type="text" id="p1" placeholder="Enter marks" class="input-field"><br>
+
+                <label for="x5">Enter marks for Chemistry</label><br>
+                <input type="text" id="c1" placeholder="Enter marks" class="input-field"><br>
+
+                <button type="submit" id="btn">Submit</button>
+            </form>
+
+            <div id="mark" class="result"></div>
+        </div>
+
+        <!-- Pie chart container -->
+        <div class="chart-container">
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hello">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+ <script src="./Portfolio.js"></script>
+    <!-- Header start -->
+    <div class="container">
+        <div class="row align-items-center py-3">
+            <!-- Logo Image -->
+            <figure class="col-auto">
+                <img src="/Images/portfolioImage.jpeg" alt="Logo" class="img-fluid" style="max-width: 80px; height: auto;">
+            </figure>
+
+  <!-- Navbar -->
+  <nav class="col navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="toggleAbout()">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+</div>
+<!-- Header end -->
+
+
+
+    <!-- Contact Start -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <h6>Email:</h6>
+                  <p>rahul.patil.sbg@gmail.com</p>
+
+                  <h6>Phone:</h6>
+                  <p>+91 7067332884</p>
+
+                  <h6>LinkedIn:</h6>
+                  <p><a href="https://www.linkedin.com/in/rahul-patil-1827rp?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank">linkedin.com/in/rahul-patil</a></p>
+
+                  <h6>Instagram:</h6>
+                  <p><a href="https://www.instagram.com/rahul_patil_18.27/profilecard/?igsh=N21uNHEwaTIxNnhm" target="_blank">instagram.com/rahul_patil</a></p>
+
+                  <h6>Facebook:</h6>
+                  <p><a href="https://www.facebook.com/profile.php?id=100006864602936&mibextid=ZbWKwL" target="_blank">facebook.com/rahul.patil</a></p>
+
+                  
+
+                  <h6>Address:</h6>
+                  <p>21, Sec-B Shri Ram Nagar Colony Gujarkheda Mhow ,Indore, Madhya Pradesh, India</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Contact End -->
+
+    <!-- About Me Card -->
+
+
+    <!-- <div class="container mt-4"> -->
+
+      <div class="container mt-4" id="aboutMe" style="display: none;"></div>
+
+        <div class="card">
+            <div class="row g-0">
+                <!-- Left Side: About Me -->
+                <div class="col-md-8 p-4">
+                    <h3>About Me</h3>
+                    <p>I’m a Computer Science Engineering graduate from Sushila Devi Bansal College of Engineering, Indore, a city known for its rich culture and vibrant tech ecosystem. Indore is famous for its lively street food scene, especially the iconic poha-jalebi, as well as its educational institutions and growing IT industry. Growing up in such a dynamic environment has shaped me into someone who values both creativity and structure in problem-solving.</p>
+                    <p>Specializing in Java, C++, SQL, and .NET, I am passionate about building efficient, scalable software solutions. I enjoy tackling complex challenges and am always eager to learn and adapt to new technologies to stay ahead of the curve.</p>
+                    <p>As a person, I am calm, methodical, and detail-oriented, which helps me approach each project with patience and precision. I believe in producing high-quality work and am always excited to connect with fellow tech enthusiasts to explore new opportunities and collaborations.</p>
+                </div>
+                <!-- Right Side: My Photo -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center p-4">
+                    <img src="./Images/RP (2).png" alt="My Photo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buttons for Education -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary w-100" data-bs-toggle="collapse" data-bs-target="#sscCard">SSC</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary w-100" data-bs-toggle="collapse" data-bs-target="#hscCard">HSC</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary w-100" data-bs-toggle="collapse" data-bs-target="#btechCard">B-TECH</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SSC Card (Collapsed) -->
+    <div class="container mt-4 collapse" id="sscCard">
+        <div class="card">
+            <div class="row g-0">
+                <!-- Left Side: SSC Details -->
+                <div class="col-md-8 p-4">
+                    <h3>SSC</h3>
+                    <p><strong>Percentage:</strong> 72%</p>
+                    <p><strong>School Name:</strong> Shri Jai Govind Gopinath Higher Secondary School, Mhow, Indore</p>
+                </div>
+                <!-- Right Side: SSC School Photo Carousel -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center p-4">
+                    <div id="sscCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./Images/jg1.avif" class="d-block w-100" alt="SSC Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg2.jpeg" class="d-block w-100" alt="SSC Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg3.jpeg" class="d-block w-100" alt="SSC Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg4.jpeg" class="d-block w-100" alt="SSC Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg5.jpeg" class="d-block w-100" alt="SSC Image 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg6.jpeg" class="d-block w-100" alt="SSC Image 6">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sscCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sscCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HSC Card (Collapsed) -->
+    <div class="container mt-4 collapse" id="hscCard">
+        <div class="card">
+            <div class="row g-0">
+                <!-- Left Side: HSC Details -->
+                <div class="col-md-8 p-4">
+                    <h3>HSC</h3>
+                    <p><strong>Percentage:</strong> 77%</p>
+                    <p><strong>School Name:</strong> Shri Jai Govind Gopinath Higher Secondary School, Mhow, Indore</p>
+                </div>
+                <!-- Right Side: HSC School Photo Carousel -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center p-4">
+                    <div id="hscCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./Images/jg1.avif" class="d-block w-100" alt="HSC Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg2.jpeg" class="d-block w-100" alt="HSC Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg3.jpeg" class="d-block w-100" alt="HSC Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg4.jpeg" class="d-block w-100" alt="HSC Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg5.jpeg" class="d-block w-100" alt="HSC Image 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg6.jpeg" class="d-block w-100" alt="HSC Image 6">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#hscCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#hscCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- B-TECH Card (Collapsed) -->
+    <div class="container mt-4 collapse" id="btechCard">
+        <div class="card">
+            <div class="row g-0">
+                <!-- Left Side: B-TECH Details -->
+                <div class="col-md-8 p-4">
+                    <h3>B-TECH</h3>
+                    <p><strong>Percentage:</strong> 82%</p>
+                    <p><strong>College Name:</strong> Sushila Devi Bansal College of Engineering, Indore</p>
+                </div>
+                <!-- Right Side: B-TECH College Photo Carousel -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center p-4">
+                    <div id="btechCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./Images/jg1.avif" class="d-block w-100" alt="B-TECH Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg2.jpeg" class="d-block w-100" alt="B-TECH Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg3.jpeg" class="d-block w-100" alt="B-TECH Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg4.jpeg" class="d-block w-100" alt="B-TECH Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg5.jpeg" class="d-block w-100" alt="B-TECH Image 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/jg6.jpeg" class="d-block w-100" alt="B-TECH Image 6">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#btechCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#btechCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section with Carousel -->
+    <div class="container mt-4">
+        <h3>Skills & Technologies</h3>
+        <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- HTML -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h5>HTML</h5>
+                            <p>HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+                            <img src="./Images/html.png" alt="HTML Icon" style="width: 40px; height: 40px;">
+                        </div>
+                        <!-- CSS -->
+                        <div class="col-md-4 text-center">
+                            <h5>CSS</h5>
+                            <p>CSS is used for styling web pages, including layout, colors, fonts, and spacing.</p>
+                            <img src="./Images/css.png" alt="CSS Icon" style="width: 40px; height: 40px;">
+                        </div>
+                        <!-- Bootstrap -->
+                        <div class="col-md-4 text-center">
+                            <h5>Bootstrap</h5>
+                            <p>Bootstrap is a front-end framework for developing responsive and mobile-first websites.</p>
+                            <img src="./Images/bootstrap.png" alt="Bootstrap Icon" style="width: 40px; height: 40px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- C -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h5>C</h5>
+                            <p>C is a powerful, general-purpose programming language.</p>
+                            <img src="./Images/letter-c.png" alt="C Icon" style="width: 40px; height: 40px;">
+                        </div>
+                        <!-- C++ -->
+                        <div class="col-md-4 text-center">
+                            <h5>C++</h5>
+                            <p>C++ is an extension of C and supports object-oriented programming (OOP) features.</p>
+                            <img src="./Images/c-.png" alt="C++ Icon" style="width: 40px; height: 40px;">
+                        </div>
+                        <!-- Java -->
+                        <div class="col-md-4 text-center">
+                            <h5>Java</h5>
+                            <p>Java is a class-based, object-oriented programming language.</p>
+                            <img src="./Images/java.png" alt="Java Icon" style="width: 40px; height: 40px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- .NET -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h5>.NET</h5>
+                            <p>.NET is a software development framework created by Microsoft.</p>
+                            <img src="./Images/net.png" alt=".NET Icon" style="width: 40px; height: 40px;">
+                        </div>
+                        <!-- React -->
+                        <div class="col-md-4 text-center">
+                            <h5>React</h5>
+                            <p>React is a JavaScript library for building user interfaces.</p>
+                            <img src="./Images/atom.png" alt="React Icon" style="width: 40px; height: 40px;">
+                        </div>
+                        <!-- Node.js -->
+                        <div class="col-md-4 text-center">
+                            <h5>Node.js</h5>
+                            <p>Node.js is a runtime environment for executing JavaScript code on the server side.</p>
+                            <img src="./Images/node.png" alt="Node.js Icon" style="width: 40px; height: 40px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h5>JavaScript</h5>
+                            <p>JavaScript is a scripting language used to create dynamic and interactive effects within web browsers.</p>
+                            <img src="./Images/java-script.png" alt="JavaScript Icon" style="width: 40px; height: 40px;">
+                        </div>
+                        <!-- HP ALM -->
+                        <div class="col-md-4 text-center">
+                            <h5>HP ALM</h5>
+                            <p>HP ALM is a tool for managing the lifecycle of applications, including testing, project management, and requirements tracking.</p>
+                            <img src="./Images/hp-alm.png" alt="HP ALM Icon" style="width: 40px; height: 40px;">
+                        </div>
+                        <!-- Postman -->
+                        <div class="col-md-4 text-center">
+                            <h5>Postman</h5>
+                            <p>Postman is a popular API testing tool for sending HTTP requests and analyzing the responses.</p>
+                            <img src="./Images/postman.png" alt="Postman Icon" style="width: 40px; height: 40px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burp Suite -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h5>Burp Suite</h5>
+                            <p>Burp Suite is a tool for web security testing, used for penetration testing and vulnerability scanning.</p>
+                            <img src="./Images/burpsuite.png" alt="Burp Suite Icon" style="width: 40px; height: 40px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+  
+    <!-- Resume  -->
+    <!-- <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next"> -->
+
+      <div class="text-center mt-4">
+        <a href="./Resume/Rahul_Patil_Resume.pdf" download="Rahul_Patil_Resume" class="btn btn-success">Download Resume</a>
+    </div>
+
+
+</body>
+
+</html>
